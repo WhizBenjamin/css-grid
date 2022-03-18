@@ -1,0 +1,23 @@
+body {
+    color: #fff;
+    font-family:'Nunito Semibold';
+    text-align: center;
+}
+
+#content {
+    max-width: 960px;
+    margin: 0 auto;
+}
+/*NOTE: #content serves as grid wrapper.
+        Above margin settings sets top and bottom to zero while left and right to auto,
+            this automatically places the content to the middle of screen by default.*/
+
+#content div {
+    background: #3bbced;
+    padding: 30px;
+}
+
+#content div:nth-child(even){
+    background: #777;
+}
+/*NOTE: Above #content div styling simply enabless the content to display two different backgrounds for odd and even.*/
