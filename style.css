@@ -5,12 +5,21 @@ body {
 }
 
 #content {
+    display: grid;
+    /*grid-template-columns: 30% 20% 50%;*/
+    /*grid-template-columns: 1fr 2fr 1fr;*/
+    grid-template-columns: repeat(3, 1fr);
     max-width: 960px;
     margin: 0 auto;
 }
 /*NOTE: #content serves as grid wrapper.
         Above margin settings sets top and bottom to zero while left and right to auto,
-            this automatically places the content to the middle of screen by default.*/
+            this automatically places the content to the middle of screen by default.
+        display: grid - sets content to grid but will not take effect unless rows/columns are set.
+        Ways to determine rows/columns include % (percentage) and fr (fractions).
+            The repeat sets a repeatation function for determining the number of rows/columns,
+                with the first digit being the repeatation and the second the actual gird value.
+*/
 
 #content div {
     background: #3bbced;
