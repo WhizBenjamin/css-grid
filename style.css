@@ -6,25 +6,13 @@ body {
 
 #content {
   display: grid;
-  /*grid-template-columns: 30% 20% 50%;*/
-  /*grid-template-columns: 1fr 2fr 1fr;*/
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(10, minmax(200px, auto)); 
-  /*not used often... (NOTE: rows set to 10 but lack of contents makes it display only 3 rows but keeps space for the other 7 rows)*/
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(4, minmax(150px, auto));
   grid-gap: 10px;
   max-width: 960px;
   margin: 0 auto;
 }
-/*NOTE: #Content serves as grid wrapper.
-        Above margin settings sets top and bottom to zero while left and right to auto,
-            this automatically places the content to the middle of screen by default.
-        Display: grid - sets content to grid but will not take effect unless rows/columns are set.
-        Ways to determine rows/columns include % (percentage) and fr (fractions).
-            The repeat sets a repeatation function for determining the number of rows/columns,
-                with the first digit being the number of rows/columns and the second the actual gird value.
-        Minmax (xxx, xxx) - sets a min and max height for content (auto as max here sets the height to be as high as the content requires).
-        Grid-gap - incorporates gap between rows and columns of grid.
-*/
+/*NOTE: From the above, we have 6 columns and 4 rows, however lack of contents keeps the other 3 rows invincible.*/
 
 #content div {
   background: #3bbced;
