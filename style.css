@@ -25,3 +25,19 @@ body {
   background: #777;
 }
 /*NOTE: Above #content div styling simply enabless the content to display two different backgrounds for odd and even.*/
+
+/* CLASS SELECTORS */
+
+.nested {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+  grid-column: 1 / 4; 
+  /*grid-column: span 3; - same as the above grid line positioning, starts at column line 1 by default and spans across 3 columns.*/
+}
+
+.nested p {
+  border: 1px solid #fff;
+  padding: 20px;
+  margin: 0;
+}
