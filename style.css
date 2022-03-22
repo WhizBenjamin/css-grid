@@ -15,7 +15,13 @@ body {
   grid-gap: 10px;
   max-width: 960px;
   margin: 0 auto;
+  /*align-items: start;*/
+  /*justify-items: start;*/
 }
+/*NOTE: Above are methods for aligning & justifying items;
+        align-items: xxx - columns (start - up & end - down),
+        justify-items: xxx - rows (start - left & end - right).
+*/
 
 #content div {
   background: #3bbced;
@@ -29,3 +35,17 @@ body {
 
 /* CLASS SELECTORS */
 
+.one {
+  align-self: end;
+  justify-self: end;
+}
+
+.two {
+  align-self: center;
+  justify-self: center;
+}
+
+.three {
+  align-self: start;
+  justify-self: start;
+}
